@@ -9,13 +9,20 @@ import java.util.List;
  * @time 2021/10/22 - 16:21
  */
 public class FileTree {
-
     /**
      * 生成文件目录树
      * windows自带 cmd-> tree /f
+     *
      * @param file  文件夹
-     * @param depth
      */
+    public static void fileTree(File file) {
+        ftree(file,0);
+    }
+
+    public static void fileTree(String path) {
+        ftree(new File(path), 0);
+    }
+
     public static void ftree(File file, int depth) {
         List<File> files = Arrays.asList(file.listFiles());
         files.sort(new Comparator<File>() {
