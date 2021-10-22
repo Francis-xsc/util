@@ -18,6 +18,10 @@ public class FileTree {
         ftree(file,0);
     }
 
+    /**
+     * 生成文件目录树
+     * @param path 文件夹路径
+     */
     public static void fileTree(String path) {
         ftree(new File(path), 0);
     }
