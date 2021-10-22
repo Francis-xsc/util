@@ -12,7 +12,6 @@ public class FileTree {
     /**
      * 生成文件目录树
      * windows自带 cmd-> tree /f
-     *
      * @param file  文件夹
      */
     public static void fileTree(File file) {
